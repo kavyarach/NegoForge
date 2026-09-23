@@ -1,0 +1,100 @@
+export const scenarios = {
+  vendor: {
+    id: 'vendor',
+    title: 'Vendor Pricing Negotiation',
+    description: 'Negotiate the price of a product between a buyer and vendor.',
+    currencySymbol: '₹',
+    unit: 'Price',
+    initialOfferValue: 100000,
+    agents: [
+      {
+        id: 'Buyer',
+        name: 'Buyer',
+        role: 'Customer',
+        goal: 'Get the best possible price',
+        constraint: 'Limited budget',
+        baselineTarget: 80000,
+        baselineReservation: 110000,
+        preferredDirection: 'DECREASE',
+      },
+      {
+        id: 'Vendor',
+        name: 'Vendor',
+        role: 'Shopkeeper',
+        goal: 'Maximize profit',
+        constraint: 'Minimum acceptable price',
+        baselineTarget: 120000,
+        baselineReservation: 85000,
+        preferredDirection: 'INCREASE',
+      },
+    ],
+  },
+
+  job: {
+    id: 'job',
+    title: 'Job Offer Negotiation',
+    description: 'Negotiate salary and job terms between a candidate and HR.',
+    currencySymbol: '$',
+    unit: 'Annual Salary',
+    initialOfferValue: 120000,
+    agents: [
+      {
+        id: 'Candidate',
+        name: 'Candidate',
+        role: 'Job Applicant',
+        goal: 'Get the best possible offer',
+        constraint: 'Minimum acceptable salary',
+        baselineTarget: 150000,
+        baselineReservation: 115000,
+        preferredDirection: 'INCREASE',
+      },
+      {
+        id: 'HR',
+        name: 'HR',
+        role: 'Recruiter',
+        goal: 'Hire the candidate within budget',
+        constraint: 'Maximum salary budget',
+        baselineTarget: 110000,
+        baselineReservation: 140000,
+        preferredDirection: 'DECREASE',
+      },
+    ],
+  },
+
+  budget: {
+    id: 'budget',
+    title: 'Project Budget Allocation',
+    description: 'Negotiate how a limited project budget should be allocated.',
+    currencySymbol: '$',
+    unit: 'Allocation Amount',
+    initialOfferValue: 200000,
+    agents: [
+      {
+        id: 'Project Manager',
+        name: 'Project Manager',
+        role: 'Project Manager',
+        goal: 'Allocate the budget effectively',
+        constraint: 'Fixed project budget',
+        baselineTarget: 150000,
+        baselineReservation: 220000,
+        preferredDirection: 'DECREASE',
+      },
+      {
+        id: 'Team Lead',
+        name: 'Team Lead',
+        role: 'Team Representative',
+        goal: 'Secure enough budget for the team',
+        constraint: 'Limited overall budget',
+        baselineTarget: 250000,
+        baselineReservation: 180000,
+        preferredDirection: 'INCREASE',
+      },
+    ],
+  },
+};
+
+export const personalityOptions = [
+  'Aggressive',
+  'Collaborative',
+  'Risk-Averse',
+];
