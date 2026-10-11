@@ -1,0 +1,96 @@
+:root {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg-main: #f8fafc;
+  --bg-sidebar: #ffffff;
+  --bg-topbar: rgba(255, 255, 255, 0.94);
+  --bg-card: #ffffff;
+  --bg-card-hover: #f1f5f9;
+  --bg-input: #ffffff;
+  --bg-secondary: #f1f5f9;
+
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --text-inverse: #ffffff;
+
+  --border-color: #cbd5e1;
+  --border-subtle: #e2e8f0;
+
+  --primary-brand: #0284c7;
+  --primary-brand-hover: #0369a1;
+  --primary-brand-bg: rgba(2, 132, 199, 0.08);
+  --primary-accent: #2563eb;
+  --success-color: #059669;
+  --warning-color: #d97706;
+  --danger-color: #dc2626;
+  --purple-accent: #7c3aed;
+  --purple-bg: rgba(124, 58, 237, 0.08);
+
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06), 0 2px 4px rgba(15, 23, 42, 0.03);
+  --shadow-lg: 0 10px 25px rgba(15, 23, 42, 0.1);
+}
+
+[data-theme="dark"], .theme-dark {
+  color-scheme: dark;
+
+  --bg-main: #080b12;
+  --bg-sidebar: #0c1019;
+  --bg-topbar: rgba(8, 11, 18, 0.88);
+  --bg-card: #0e141e;
+  --bg-card-hover: #131c29;
+  --bg-input: #0a1018;
+  --bg-secondary: #111a26;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-inverse: #0f172a;
+
+  --border-color: #1e293b;
+  --border-subtle: #1e293b;
+
+  --primary-brand: #38bdf8;
+  --primary-brand-hover: #0284c7;
+  --primary-brand-bg: rgba(56, 189, 248, 0.1);
+  --primary-accent: #3b82f6;
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --danger-color: #ef4444;
+  --purple-accent: #a78bfa;
+  --purple-bg: rgba(167, 139, 250, 0.1);
+
+  --shadow-sm: none;
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg-main);
+  color: var(--text-primary);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, p {
+  margin-top: 0;
+}
+
+code, pre {
+  font-family: ui-monospace, Consolas, monospace;
+}
+
